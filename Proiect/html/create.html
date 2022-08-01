@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/create.css">
+    <title>Create a new item</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <h1 class="title"><img src="../img/colosseum-icon.png" class="icon">Wonders Of The World</h1>
+        <a href="register.html" id="register" class="butoane log-in">Register</a>
+        <a href="login.html" id="login" class="butoane log-in">Login</a>
+        <a href="" id="logout" class="butoane logout log-out">Logout</a>
+    </header>
+
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-gold bg-dark sidebar">
+        <h5 class="titlu-2">Navigation</h5>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item element-lista">
+
+                <a href="Homepage.html" class="nav-link buton-link" aria-current="page">
+                    <img src="../img/home-icon.png" class="icon-sidebar">
+                    Home
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="List.html" class="nav-link buton-link">
+                    <img src="../img/list2.png" class="icon-sidebar">
+                    List
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="create.html" class="nav-link buton-link">
+                    <img src="../img/add-list-48.png" class="icon-sidebar">
+                    Create
+                </a>
+            </li>
+
+        </ul>
+        <hr>
+        <div class="footer">
+            <p>Wonders Of The World</p> 
+            <p>2021</p>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+
+        <form class="form" onsubmit="createWonder(event)">
+            <p class="title">Add a new Wonder:</p>
+
+
+            <div class="element-create">
+                <label class="form-text" for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" class="input" required="required">
+            </div>
+            <div class="element-create">
+                <label class="form-text" for="picture">Picture 1 link:</label>
+                <input type="text" id="picture1" name="picture" placeholder="Picture" class="input" required="required">
+            </div>
+            <div class="element-create">
+                <label class="form-text" for="picture">Picture 2 link:</label>
+                <input type="text" id="picture2" name="picture" placeholder="Picture" class="input" required="required">
+            </div>
+            <div class="element-create">
+                <label class="form-text" for="picture">Picture 3 link:</label>
+                <input type="text" id="picture3" name="picture" placeholder="Picture" class="input" required="required">
+            </div>
+            <div class="element-create">
+                <label class="form-text" for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Description" class="input"
+                    required="required"></textarea>
+            </div>
+
+
+            <button id="create-button" type="submit">Create</button>
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script src="../js/utils.js"></script>
+    <script src="../js/models/wonder.js"></script>
+    <script src="../js/models/user.js"></script>
+    <script src="../js/http-api.js"></script>
+    <script src="../js/index.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            commonJs();
+        })
+    </script>
+</body>
+
+</html>

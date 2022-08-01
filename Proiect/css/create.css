@@ -1,0 +1,205 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-image: url(../img/machu-picchu-2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.header {
+    width: 100%;
+    height: 7%;
+    background-color: #202325;
+    display: flex;
+    justify-content:space-between;
+    order: 1;
+    
+
+}
+.sidebar {
+order: 2;
+height: 100%;
+width: 150px;
+}
+
+
+.butoane {
+    background-color: #202325;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.butoane:hover {
+    background-color: #0c0a06;
+   
+}
+#register {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#login {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#logout {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+::-webkit-scrollbar-track {
+    background: #ddbf8cc5;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e7a533f8;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d49c3a;
+  }
+
+ 
+ 
+  
+
+  .titlu-2 {
+      color: rgb(226, 195, 19);
+      padding-left: 15%;
+  }
+
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+    
+}
+
+.form {
+    width: 550px;
+    height: 850px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #272118d0;
+    border-radius: 10px;
+   
+}
+
+
+
+.form-text {
+    margin-left: 3%;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+}
+
+.input {
+    margin: 3%; 
+    height: 35px;
+    border-radius: 10px;
+    background-color: rgba(179, 178, 177, 0.507);
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+#create-button {
+    margin: 3%;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(248, 219, 53, 0.925);
+    border: 1px solid rgb(211, 137, 1);
+
+}
+#description {
+    height: 200px;
+}
+
+.container {
+    order: 3;
+    margin-top: 5%;
+}
+.icon-sidebar {
+    width: 25px;
+    margin-right: 10%;
+  
+}
+
+.buton-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gold;
+}
+
+.icon {
+    width: 15%;
+    height: 90%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.title {
+    color: rgb(252, 255, 56);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.element-create {
+    display: flex;
+    flex-direction: column;
+   
+}
+.footer {
+    color: rgba(255, 255, 255, 0.459);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+}

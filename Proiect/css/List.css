@@ -1,0 +1,582 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    background-image: url(../img/machu-picchu-2.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.container-1 {
+    width: 92%;
+    height: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    order: 3;
+    
+   
+}
+
+.lista {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    
+}
+
+
+.element {
+    height: 300px;
+    background-color: #66635fc5;
+    width: 250px;
+    border-radius: 15px;
+    list-style-type: none;
+    
+    margin: 1%;
+    border: 1px solid #161410e7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.wonders-title{
+    color: rgb(227, 250, 24);
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 7%;
+}
+
+.butoane-lista {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#view-button {
+    background-color: #73c72fe7;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px 0px 0px 15px;
+    margin-right: 1%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+#delete-button {
+    background-color: rgba(253, 37, 37, 0.582);
+    width: 70px;
+    height: 30px;
+    border-radius: 0px 15px 15px 0px;
+   
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.wonders-image {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    border: 1px solid #22201de0;
+
+    
+}
+
+
+#imagine {
+    display: flex;
+    justify-content: center;
+}
+
+
+.header {
+    width: 100%;
+    height: 7%;
+    background-color: #202325;
+    display: flex;
+  
+    justify-content:space-between;
+    order: 1;
+    
+
+}
+.sidebar {
+order: 2;
+height: 93%;
+width: 150px;
+}
+
+
+.butoane {
+    background-color: #202325;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.butoane:hover {
+    background-color: #0c0a06;
+   
+}
+#register {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+#login {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#logout {
+    width: 10%;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+::-webkit-scrollbar-track {
+    background: #ddbf8cc5;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #e7a533f8;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d49c3a;
+  }
+
+ 
+ 
+  
+
+  .titlu-2 {
+      color: rgb(226, 195, 19);
+      padding-left: 15%;
+  }
+
+.icon-sidebar {
+    width: 25px;
+    margin-right: 10%;
+  
+}
+
+.buton-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: gold;
+}
+
+.icon {
+    width: 15%;
+    height: 90%;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.title {
+    color: rgb(252, 255, 56);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer {
+    color: rgba(255, 255, 255, 0.459);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        
+        height: 93%;
+        width: 90px;
+        
+        }
+
+        .icon-sidebar {
+            width: 15px;
+            margin-right: 1%;
+          
+        }
+
+        .buton-link {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            color: gold;
+            font-size: 12px;
+        }
+
+        .titlu-2 {
+            color: rgb(226, 195, 19);
+            padding-left: 1%;
+            font-size: 15px;
+            display: flex;
+            justify-content: flex-start;
+            
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: #202325;
+            display: flex;
+          
+            justify-content:space-evenly;
+            order: 1;
+        }
+        .title {
+            display: none;
+        }
+
+        .container-1 {
+            width: 75%;
+            height: 93%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2%;
+            padding-top: 3%;
+            order: 3;
+            
+           
+        }
+        
+        .lista {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: auto;
+            border-radius: 20px;
+            justify-content: space-evenly;
+            
+        }
+        
+        
+        .element {
+            height: 200px;
+            background-color: #66635fc5;
+            width: 150px;
+            border-radius: 15px;
+            list-style-type: none;
+            
+            margin: 1%;
+            border: 1px solid #161410e7;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            
+            
+        }
+
+        .wonders-title{
+            color: rgb(227, 250, 24);
+            font-weight: normal;
+            font-size: 15px;
+            margin-left: 7%;
+        }
+
+        #view-button {
+            background-color: #73c72fe7;
+            width: 50px;
+            height: 20px;
+            border-radius: 15px 0px 0px 15px;
+            margin-right: 1%;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 12px;
+        }
+        
+        #delete-button {
+            background-color: rgba(253, 37, 37, 0.582);
+            width: 50px;
+            height: 20px;
+            border-radius: 0px 15px 15px 0px;
+            font-size: 12px;
+            color: black;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+}
+
+@media screen and (min-width: 600px) {
+    .container-1 {
+        width: 75%;
+        height: 93%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+        padding-top: 3%;
+        order: 3;
+        
+       
+    }
+
+    .sidebar {
+        height: 100%;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #202325;
+        display: flex;
+      
+        justify-content:space-evenly;
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-1 {
+        width: 85%;
+        height: 93%;
+        display: flex;
+        flex-wrap: wrap;
+        
+        order: 3;
+        
+       
+    }
+    
+    .lista {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        border-radius: 20px;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .element {
+        height: 300px;
+        background-color: #66635fc5;
+        width: 250px;
+        border-radius: 15px;
+        list-style-type: none;
+        
+        margin: 1%;
+        border: 1px solid #161410e7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    
+    .wonders-title{
+        color: rgb(227, 250, 24);
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 7%;
+    }
+    .title {
+        color: rgb(252, 255, 56);
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: #202325;
+        display: flex;
+      
+        justify-content:space-between;
+        order: 1;
+    }
+}
+
+
+@media screen and (min-width: 1700px) {
+    .container-1 {
+        width: 90%;
+        height: 93%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 1%;
+        order: 3;
+        
+       
+    }
+    .sidebar {
+        height: 94.8%;
+    }
+    
+    .lista {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: auto;
+        border-radius: 20px;
+        justify-content: space-evenly;
+        
+    }
+    
+    
+    .element {
+        height: 300px;
+        background-color: #66635fc5;
+        width: 250px;
+        border-radius: 15px;
+        list-style-type: none;
+        
+        margin: 1%;
+        border: 1px solid #161410e7;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+    }
+    
+    .wonders-title{
+        color: rgb(227, 250, 24);
+        font-weight: bold;
+        font-size: 18px;
+        margin-left: 7%;
+    }
+    
+    .butoane-lista {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2%;
+    }
+    
+    #view-button {
+        background-color: #73c72fe7;
+        width: 70px;
+        height: 30px;
+        border-radius: 15px 0px 0px 15px;
+        margin-right: 1%;
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+    
+    #delete-button {
+        background-color: rgba(253, 37, 37, 0.582);
+        width: 70px;
+        height: 30px;
+        border-radius: 0px 15px 15px 0px;
+       
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    
+  .titlu-2 {
+    color: rgb(226, 195, 19);
+    padding-left: 15%;
+}
+
+.icon-sidebar {
+  width: 25px;
+  margin-right: 10%;
+
+}
+
+.buton-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gold;
+}
+
+.icon {
+  width: 15%;
+  height: 90%;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+.title {
+  color: rgb(252, 255, 56);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer {
+  color: rgba(255, 255, 255, 0.459);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+}
+}
